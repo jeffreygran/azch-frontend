@@ -13,6 +13,7 @@ block content
       $.get('!{captureOrderService}?timestamp=' + $.now(), function( data ) {
           $('h2#orderCount').html(data.orderCount);
           $('h3#timestamp').html(data.timestamp);
+          $('h3#ccDesign').html('JCG Design - AKS Deployment v2.0');
       });
       setTimeout(update,500);
     }
@@ -20,3 +21,4 @@ block content
   h1= title
   h2#orderCount
   h3#timestamp
+  h3#ccDesign
