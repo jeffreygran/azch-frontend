@@ -16,7 +16,7 @@ spec:
         - name: acr-auth
         containers:
         - name: frontend
-          image: deviwantacr.azurecr.io/frontend:#{Build.BuildId}#
+          image: #{LoginServer}#/frontend:#{Build.BuildId}#
           imagePullPolicy: Always
           readinessProbe:
             httpGet:
