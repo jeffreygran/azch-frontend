@@ -40,7 +40,7 @@ spec:
           - containerPort: 8080       
           volumeMounts:
           - mountPath: "/mnt/azure"
-          name: volume      
+            name: volume      
       volumes:
       - name: volume
         persistentVolumeClaim:
