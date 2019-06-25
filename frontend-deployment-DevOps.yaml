@@ -37,4 +37,11 @@ spec:
           - name: CAPTUREORDERSERVICEIP
             value: "#{CAPTUREORDERSERVICEIP}#"
           ports:
-          - containerPort: 8080
+          - containerPort: 8080       
+          volumeMounts:
+          - mountPath: "/mnt/azure"
+          name: volume      
+      volumes:
+      - name: volume
+        persistentVolumeClaim:
+        claimName: frontend-managed-disk
