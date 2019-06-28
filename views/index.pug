@@ -13,7 +13,7 @@ block content
       $.get('!{captureOrderService}?timestamp=' + $.now(), function( data ) {
           $('h2#orderCount').html(data.orderCount);
           $('h3#timestamp').html(data.timestamp);
-          $('h3#ccDesign').html('JCG Design - AKS Deployment v3.0');
+          $('h3#ccDesign').html('JCG Design - AKS Deployment v4.0');
       });
       setTimeout(update,500);
     }
